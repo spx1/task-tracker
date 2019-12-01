@@ -1,4 +1,9 @@
 from flask import Flask
+import os
+
+APP_DIR = os.path.dirname(os.path.realpath(__file__))
+TEMPLATE_DIR = os.path.join(APP_DIR,"templates")
+STATIC_DIR = os.path.join(APP_DIR,"static")
 
 def create_app(configuration='Development'):
     from app.config import config_by_name 
