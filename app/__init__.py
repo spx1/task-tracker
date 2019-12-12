@@ -12,5 +12,5 @@ def create_app(configuration='Development'):
     app.config.from_object(config_by_name[ configuration or 'Development'])
     
     register_routes(app)
-    app.run()
-    
+    #app.run()
+    return app

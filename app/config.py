@@ -13,9 +13,16 @@ class Production(Config):
     NAME = 'Production'
     TEST_STRING = 'This is the production configuration'
 
+class Test(Config):
+    NAME = 'test'
+    DEBUG = False
+    TESTING = True
+
+
 EXPORT_CONFIGS = [
     Development,
-    Production
+    Production,
+    Test
 ]
 
 config_by_name = {cfg.NAME: cfg for cfg in EXPORT_CONFIGS}
