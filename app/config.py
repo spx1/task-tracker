@@ -3,6 +3,8 @@ class Config(object):
     DEBUG = False
     TESTING = False
     TEST_STRING = 'This is the default configuration'
+    SQLALCHEMY_DATABASE_URI = 'sqlite:////tmp/app.db'
+    SQLALCHEMY_TRACK_MODIFICATIONS = False
 
 class Development(Config):
     NAME = 'Development'
