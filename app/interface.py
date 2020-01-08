@@ -8,5 +8,6 @@ class TaskInterface(TypedDict, total=False):
     id: int
     name: str
     state_id: int
+    state: StateInterface
 
 
